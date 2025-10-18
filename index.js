@@ -22,7 +22,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://instagram-clone-six-khaki.vercel.app/",
+      "https://instagram-clone-six-khaki.vercel.app",
     ],
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
