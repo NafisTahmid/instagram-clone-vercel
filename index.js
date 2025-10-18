@@ -36,7 +36,7 @@ app.use("/api/v1/message", messageRoute);
 app.use("/auth", authRoute);
 
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "Hello world", success: true });
+  res.status(200).json({ message: "Deploying on vercel", success: true });
 });
 
 const listen = async () => {
