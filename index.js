@@ -20,7 +20,10 @@ app.use(express.urlencoded({ extended: true }));
 configureGoogleAuth();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://instagram-clone-six-khaki.vercel.app/",
+    ],
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
