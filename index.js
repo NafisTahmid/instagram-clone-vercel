@@ -25,7 +25,7 @@ app.use(
       "https://instagram-clone-six-khaki.vercel.app",
       "https://instagram-clone-frontend-ahhc.onrender.com",
     ],
-    methods: ["GET", "POST", "DELETE"],
+    methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })
