@@ -23,6 +23,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://instagram-clone-six-khaki.vercel.app",
+      "https://instagram-clone-frontend-ahhc.onrender.com",
     ],
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -38,7 +39,7 @@ app.use("/auth", authRoute);
 app.get("/", (req, res) => {
   res.status(200).json({ message: "Deployed on vercel", success: true });
 });
-
+// connectDB();
 const listen = async () => {
   const connection = await connectDB();
   if (connection) {
@@ -50,3 +51,4 @@ const listen = async () => {
 };
 
 listen();
+// export default app;
